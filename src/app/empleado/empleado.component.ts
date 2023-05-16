@@ -18,10 +18,24 @@ export class EmpleadoComponent {
 
     habilitacionCuadro=false
 
-    usuRegistrado=true
+    usuRegistrado=false
+
+    textoDeRegistro="No hay nadie registrado";
+
 
     getRegistroUsuario() {
-      this.usuRegistrado=false
+      this.usuRegistrado=false;
     }
+
+    setUsuarioRegistrado(event:Event) {
+      
+      // alert ("El usuario se registro correctamente");
+
+      //this.textoDeRegistro="El usuario se registro correctamente"
+
+      alert(event.target)
+    }
+
+
 
 }
