@@ -14,7 +14,9 @@ export class EmpleadoComponent {
 
     edad=2;
 
-    /* empresa="Amazon"; */
+    empresa="Mojang";
+    
+ 
 
     habilitacionCuadro=false
 

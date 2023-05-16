@@ -1,11 +1,11 @@
 <p>Nombre del empleado: {{nombre}} </p>
 <p>Apellido del empleado: {{apellido}} </p>
 <p>edad del empleado: {{ edad<18 ? "Menor de edad":"Mayor de edad" }} </p>
-<p>Empresa del empleado: {{empresa.value}} </p> 
+<p>Empresa del empleado: {{empresa}} </p> 
 
 
-introduce una empresa <input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro">
-
+<!-- introduce una empresa <input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro"> -->
+introduce una empresa <input type="text" [(ngModel)]="empresa" >
 <br>
 <br>
 {{textoDeRegistro}} <br>
