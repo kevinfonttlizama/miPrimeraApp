@@ -33,7 +33,16 @@ export class EmpleadoComponent {
 
       //this.textoDeRegistro="El usuario se registro correctamente"
 
-      alert(event.target)
+      // alert(event.target)
+
+      if((<HTMLInputElement>event.target).value=="si") {
+        this.textoDeRegistro="El usuario se registro correctamente";
+      }
+      else {
+        this.textoDeRegistro="No hay nadie registrado";
+      }
+
+
     }
 
 
